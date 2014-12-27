@@ -34,6 +34,12 @@
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <!--Leaf Project Items-->
   <ItemGroup>
     <Compile Include="AccessConnectionUIControl.cs">
@@ -180,6 +186,9 @@
       <Name>Microsoft.Data.ConnectionUI</Name>
       <Comment>Needs 'microsoft.data.connectionui.dll'</Comment>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
   </ItemGroup>
   <!--Import the targets-->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

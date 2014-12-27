@@ -32,6 +32,12 @@
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <!--Leaf Project Items-->
   <ItemGroup>
     <Reference Include="System" />
@@ -44,6 +50,9 @@
   <ItemGroup>
     <Compile Include="IDataConnectionProperties.cs" />
     <Compile Include="IDataConnectionUIControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
   </ItemGroup>
   <!--Import the targets-->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
